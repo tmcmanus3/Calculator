@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
     public void onDivide(View view) {
         EditText input1 = (EditText) findViewById(R.id.FirstNumber);
         EditText input2 = (EditText) findViewById(R.id.SecondNumber);
-        Integer int1 = Integer.parseInt(input1.getText().toString());
-        Integer int2 = Integer.parseInt(input2.getText().toString());
+        float int1 = Float.parseFloat(input1.getText().toString());
+        float int2 = Float.parseFloat(input2.getText().toString());
 
         goToActivity2(String.valueOf(int1/int2));
     }
